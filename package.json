@@ -1,6 +1,6 @@
 {
   "name": "node-ziggurat",
-  "description": "node-ziggurat",
+  "description": "An implementation of the Ziggurat algorithm for generating Normally-distributed numbers.",
   "version": "0.0.1",
   "license": "MIT",
   "author": {
