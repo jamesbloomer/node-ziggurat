@@ -1,0 +1,23 @@
+{
+  "name": "node-ziggurat",
+  "description": "node-ziggurat",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": {
+    "name": "James Bloomer",
+    "url": "https://github.com/jamesbloomer"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/jamesbloomer/node-ziggurat.git"
+  },
+  "keywords": [
+    "gaussian",
+    "ziggurat",
+    "stats",
+    "random"
+  ],
+  "engines": {
+    "node": ">= 0.10.0"
+  }
+}
