@@ -1,7 +1,7 @@
 {
   "name": "node-ziggurat",
   "description": "An implementation of the Ziggurat algorithm for generating Normally-distributed numbers.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "author": {
     "name": "James Bloomer",
