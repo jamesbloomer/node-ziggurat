@@ -1,6 +1,9 @@
 
-function Ziggurat(){
-
+function Ziggurat(seed) {
+  seed = arguments.length
+	  ? seed
+	  : new Date().getTime();
+  
   var jsr = 123456789;
 
   var wn = Array(128);
@@ -15,7 +18,7 @@ function Ziggurat(){
 
   this.nextGaussian = function(){
     return RNOR();
-  }
+  };
 
   function nfix(hz, iz){
     var r = 3.442619855899;
@@ -60,9 +63,9 @@ function Ziggurat(){
     return 0.5 * (1 + SHR3() / -Math.pow(2,31));
   }
 
-  function zigset(){
+  function zigset(seed) {
     // seed generator based on current time
-    jsr ^= new Date().getTime();
+    jsr ^= seed;
 
     var m1 = 2147483648.0;
     var dn = 3.442619855899;
@@ -88,7 +91,7 @@ function Ziggurat(){
     }
   }
 
-  zigset();
+  zigset(seed);
 }
 
 module.exports = Ziggurat;
